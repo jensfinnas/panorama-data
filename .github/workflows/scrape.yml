@@ -39,6 +39,8 @@ jobs:
         run: |
           git add data/raw
           git commit -m "Update data/raw"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         
       - name: Parse raw data
         run: python parse_raw.py data/raw/$(date +"%Y-%m-%d").csv
@@ -47,6 +49,8 @@ jobs:
         run: |
           git add data/parsed
           git commit -m "Update data/parsed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         
       - name: Copy parsed data to data/parsed/latest
         run: cp data/parsed/$(date +"%Y-%m-%d")/* data/parsed/latest/
@@ -55,3 +59,5 @@ jobs:
         run: |
           git add data/parsed/latest
           git commit -m "Update data/parsed/latest"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
