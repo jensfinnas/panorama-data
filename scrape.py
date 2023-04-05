@@ -5,6 +5,9 @@ import json
 import os
 
 OUTDIR = "tmp"
+if not os.path.exists(OUTDIR):
+    os.makedirs(OUTDIR)
+
 today = datetime.now().strftime('%Y-%m-%d')
 outfile_json = os.path.join(OUTDIR, f"{today}.json")
 outfile_csv = os.path.join(OUTDIR, f"{today}.csv")
