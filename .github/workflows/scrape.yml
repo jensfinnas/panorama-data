@@ -1,0 +1,56 @@
+name: Scrape and Parse
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # run once every day at midnight UTC
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Scrape data
+        run: python scrape.py
+        
+      - name: Evaluate downloaded file
+        run: python evaluated_downloaded.py tmp/$(date +"%Y-%m-%d").csv
+        
+      - name: Check if files were created
+        run: |
+          if [[ $(git status --porcelain | grep '^A') ]]; then
+            echo "New files were created. Continuing with the workflow."
+          else
+            echo "No new files were created. Aborting the workflow."
+            exit 0
+          fi
+        
+      - name: Stage and commit changes in data/raw
+        run: |
+          git add data/raw
+          git commit -m "Update data/raw"
+        
+      - name: Parse raw data
+        run: python parse_raw.py data/raw/$(date +"%Y-%m-%d").csv
+        
+      - name: Stage and commit changes in data/parsed
+        run: |
+          git add data/parsed
+          git commit -m "Update data/parsed"
+        
+      - name: Copy parsed data to data/parsed/latest
+        run: cp data/parsed/$(date +"%Y-%m-%d")/* data/parsed/latest/
+        
+      - name: Stage and commit changes in data/parsed/latest
+        run: |
+          git add data/parsed/latest
+          git commit -m "Update data/parsed/latest"
