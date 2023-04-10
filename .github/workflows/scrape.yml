@@ -22,7 +22,10 @@ jobs:
       
       - name: Scrape data
         run: python scrape.py
-        
+
+      - name: list files
+        run: ls -l
+
       - name: Evaluate downloaded file
         run: python evaluated_downloaded.py tmp/$(date +"%Y-%m-%d").csv
         
