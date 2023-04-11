@@ -35,30 +35,20 @@ jobs:
             echo "No new files were created. Aborting the workflow."
             exit 0
           fi
-        
+
+      - name: Parse raw data
+        run: python parse_raw.py data/raw/$(date +"%Y-%m-%d").csv
+                
+      - name: Copy parsed data to data/parsed/latest
+        run: cp data/parsed/$(date +"%Y-%m-%d")/* data/parsed/latest/
+
       - name: Stage and commit changes in data/raw
         run: |
+          git config --global user.email "jens.finnas@gmail.com"
+          git config --global user.name "Jens Finnäs"
           git add data/raw
+          git add data/parsed
           git commit -m "Update data/raw"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        
-      - name: Parse raw data
-        run: python parse_raw.py data/raw/$(date +"%Y-%m-%d").csv
-        
-      - name: Stage and commit changes in data/parsed
-        run: |
-          git add data/parsed
-          git commit -m "Update data/parsed"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        
-      - name: Copy parsed data to data/parsed/latest
-        run: cp data/parsed/$(date +"%Y-%m-%d")/* data/parsed/latest/
-        
-      - name: Stage and commit changes in data/parsed/latest
-        run: |
-          git add data/parsed/latest
-          git commit -m "Update data/parsed/latest"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
