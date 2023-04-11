@@ -42,13 +42,12 @@ jobs:
       - name: Copy parsed data to data/parsed/latest
         run: cp data/parsed/$(date +"%Y-%m-%d")/* data/parsed/latest/
 
-      - name: Stage and commit changes in data/raw
-        run: |
-          git config --global user.email "jens.finnas@gmail.com"
-          git config --global user.name "Jens Finnäs"
-          git add data/raw
-          git add data/parsed
-          git commit -m "Update data/raw"
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          message: "Update data"
+          add: "data"
+          branch: main
+          push: "true"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
