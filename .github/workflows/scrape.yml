@@ -28,21 +28,27 @@ jobs:
           python evaluate_downloaded.py tmp/$(date +"%Y-%m-%d").csv
         
       - name: Check if files were created
+        id: check_files
         run: |
           if [[ $(git status --porcelain | grep '^A') ]]; then
             echo "New files were created. Continuing with the workflow."
+            echo "::set-output name=continue::true"
           else
             echo "No new files were created. Aborting the workflow."
+            echo "::set-output name=continue::false"
             exit 0
           fi
 
       - name: Parse raw data
+        if: steps.check_files.outputs.continue == 'true'
         run: python parse_raw.py data/raw/$(date +"%Y-%m-%d").csv
                 
       - name: Copy parsed data to data/parsed/latest
+        if: steps.check_files.outputs.continue == 'true'
         run: cp data/parsed/$(date +"%Y-%m-%d")/* data/parsed/latest/
 
       - name: Commit and push changes
+        if: steps.check_files.outputs.continue == 'true'
         uses: EndBug/add-and-commit@v7
         with:
           message: "Update data"
