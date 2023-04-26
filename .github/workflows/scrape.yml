@@ -30,7 +30,7 @@ jobs:
       - name: Check if files were created
         id: check_files
         run: |
-          if [[ $(git status --porcelain | grep '^A') ]]; then
+          if [[ $(git diff --exit-code data/raw) ]]; then
             echo "New files were created. Continuing with the workflow."
             echo "::set-output name=continue::true"
           else
