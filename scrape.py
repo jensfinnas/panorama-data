@@ -13,9 +13,9 @@ outfile_json = os.path.join(OUTDIR, f"{today}.json")
 outfile_csv = os.path.join(OUTDIR, f"{today}.csv")
 
 # Scrape
-url = "https://api.climateview.global/boards/Boards/ec2d0cdf-e70e-43fb-85cb-ed6b31ee1e09/published/v3"
+url = "https://api.climateview.net/boards/Boards/ec2d0cdf-e70e-43fb-85cb-ed6b31ee1e09/published/v3"
 print(f"/GET {url}")
-r = requests.get(url)
+r = requests.get(url, verify=False)
 
 
 # Store a copy of the raw file
