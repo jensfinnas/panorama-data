@@ -3,6 +3,3 @@ tmp/*.*
 __pycache__
 *.csv#
 .env
-lib/bot.py
-lib/slack.py
-lib/utils.py
