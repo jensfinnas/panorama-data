@@ -8,6 +8,8 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    environment: 
+      name: Github Actions  # For reading env vars
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
