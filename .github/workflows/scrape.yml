@@ -42,7 +42,11 @@ jobs:
       - name: Parse raw data
         if: steps.check_files.outputs.continue == 'true'
         run: python parse_raw.py data/raw/$(date +"%Y-%m-%d").csv
-                
+
+      - name: Send Slack notification with summary
+        if: steps.check_files.outputs.continue == 'true'
+        run: python summarize_update.py data/parsed/$(date +"%Y-%m-%d") data/parsed/latest
+
       - name: Copy parsed data to data/parsed/latest
         if: steps.check_files.outputs.continue == 'true'
         run: cp data/parsed/$(date +"%Y-%m-%d")/* data/parsed/latest/
@@ -57,3 +61,7 @@ jobs:
           push: "true"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Send Slack notification if nothing changed
+        if: steps.check_files.outputs.continue == 'false'
+        run: python post_to_slack.py "Kollade Panorama. Ingen ny data."

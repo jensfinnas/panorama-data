@@ -45,10 +45,19 @@ def compare_csv_files(file1_path: str, file2_path: str) -> Dict[str, List[Dict]]
             # Find the new, removed, and updated rows in the two CSV files
             new_rows = [rows2[id] for id in set(rows2) - set(rows1)]
             removed_rows = [rows1[id] for id in set(rows1) - set(rows2)]
-            updated_rows = [rows2[id] for id in set(rows2) & set(rows1) if rows1[id] != rows2[id]]
+            updated_rows = [(rows1[id], rows2[id]) for id in set(rows2) & set(rows1) if rows1[id] != rows2[id]]
 
             # Return a dictionary containing the differences between the two CSV files
             return {'new': new_rows, 'removed': removed_rows, 'updated': updated_rows}
 
     except FileNotFoundError:
         raise FileNotFoundError("One or both of the input files could not be found.")
+
+def convert_values_to_float(input_dict):
+    output_dict = {}
+    for key, value in input_dict.items():
+        try:
+            output_dict[key] = float(value)
+        except ValueError:
+            output_dict[key] = value
+    return output_dict
