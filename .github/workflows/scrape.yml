@@ -5,6 +5,11 @@ on:
     - cron: '0 0 * * *' # run once every day at midnight UTC
   workflow_dispatch: # run manually
 
+env: 
+  MURASAKI_USER: ${{ secrets.MURASAKI_USER }}
+  MURASAKI_PASSWORD: ${{ secrets.MURASAKI_PASSWORD }}
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
