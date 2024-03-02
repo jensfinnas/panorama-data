@@ -55,7 +55,11 @@ def add_latest_target_value(row):
     if pd.isna(latest_year):
         return row
     
-    row[f"targetLatestValue"] = row["target"][latest_year]
+    try:
+        row[f"targetLatestValue"] = row["target"][latest_year]
+    except KeyError:
+        # Det saknas målvärde för observationsåret
+        row[f"targetLatestValue"] = None
 
     return row
 
