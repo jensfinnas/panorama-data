@@ -1,0 +1,77 @@
+id,title,sector,status,subsector,co2e,diagramDescription,transitionLabel,transitionUnit,emissionsLatestValue,emissionsLatestYear,modelType,outcomeLatestValue,outcomeLatestYear,targetLatestValue,targetDiff,targetDiffPct
+13c15a97-b952-4782-828e-8a85c8d39ab4,Produktion med vätgas,industry,5,,4.913,Andel stål som produceras med vätgasprocess,,"Andel vätgasprocess, %",4.913,2021.0,custom,0.0,2019.0,0.0,0.0,
+7628b744-d658-4ca8-91ce-6f105d81dd45,Biokol för stålproduktion,industry,5,iron_and_steel,0.578,Biobränsle för stålproduktion,,"Andel biobränsle, %",0.578,2021.0,custom,0.0,2020.0,0.785212718,-0.785212718,-1.0
+ab98a4aa-a42c-4375-a758-625e714c84aa,Elektrifiering av produktion,industry,5,iron_and_steel,0.289,Andel elektrifiering,,"Andel elektrifiering, %",0.289,2021.0,custom,0.0,2018.0,7.62,-7.62,-1.0
+74b2ef47-21b4-48e5-aeda-b3faf2c880e7,CCS: koldioxidfångare,industry,5,cement_and_concrete,1.646,Mängd insamlad och lagrad koldioxid,,"Mängd insamlad koldioxid, kton",1.646,2021.0,custom,0.0,2019.0,0.0,0.0,
+00512529-cd61-4982-b096-7c1cde6ebe65,Elektrifiering av produktion,industry,5,cement_and_concrete,0.408,Andel elektrifierade processer,,Andel elektrifierade processer,0.408,2021.0,custom,0.0,2020.0,0.0,0.0,
+0328c7f3-a938-42c4-a62c-b238180ddd27,Fossilfri vätgasproduktion,industry,5,refineries,0.282,Förnybar vätgasproduktion,,"Förnybar vätgasproduktion, ton/år",0.282,2021.0,custom,0.0,2022.0,2164.0,-2164.0,-1.0
+8b301e8b-5b22-4124-97d6-e7d95b6f741e,Förnybara råvaror,industry,5,refineries,1.336,Andel förnybara råvaror,,Andel förnybara råvaror (%),1.336,2021.0,custom,1.83,2022.0,4.0,-2.17,-0.5425
+6c4a90bb-687a-423b-a9ab-b9931f58d5ef,Förnybara råvaror,industry,5,chemical,0.417,Andel förnybar råvara,,"Andel förnybar råvara, %",0.417,2021.0,custom,,,,,
+e824f69d-f682-490b-8155-1dce864ddc11,Ökad plaståtervinning,industry,5,chemical,0.278,Ökad plaståtervinning,,"Mängd återvunnen plast, ton",0.278,2021.0,custom,46400.0,2020.0,125214.28571428571,-78814.28571428571,-0.6294352538505419
+d04e12da-5f81-4013-b68a-a0c65718c05d,CCS/CCU: Koldioxidfångare,industry,5,chemical,0.695,Mängd insamlad och lagrad koldioxid,,"Andel insamlad koldioxid, %",0.695,2021.0,custom,0.0,2022.0,0.0,0.0,
+f5f3705a-2bad-40fa-ae76-4ca172fedef5,Biobränsle för pappers och massaindustri,industry,5,paper_and_pulp,0.729,Andel biobränsle,,Andel biobränsle,0.729,2021.0,custom,96.03,2020.0,94.27857142857142,1.7514285714285762,0.018577164936737667
+924d768d-8447-41cf-a28d-dac49bc23946,Elektrifiering av produktion,industry,5,paper_and_pulp,0.109,Andel elanvändning,,"Andel el, %",0.109,2021.0,custom,25.81,2020.0,30.28,-4.470000000000002,-0.14762219286657863
+4fd1bae4-5cca-4c29-a31d-f399fb99ba05,Biobränsle för metallindustrin,industry,5,metals,0.102,Andel biobränsle,,"Andel biobränsle, %",0.102,2021.0,custom,12.14,2020.0,28.66,-16.52,-0.5764131193300768
+24d0ebb5-d3cc-4822-a447-315cf5162495,Inerta anoder,industry,5,metals,0.187,Andel primär aluminiumproduktion med inerta anoder,,"Andel inerta anoder, %",0.187,2021.0,custom,0.0,2022.0,34.285714285714285,-34.285714285714285,-1.0
+7116d4de-994d-4a5f-bf9d-82a25a36ecb2,Ökad återvinning,industry,5,metals,0.156,Andel återvinning,,"Andel återvinning, %",0.156,2021.0,custom,85.1,2021.0,77.728,7.372,0.09484355701934954
+18d939a9-dd4f-48f9-b2f4-b5f81be5bf5b,Biobränsle för övriga industrier,industry,5,industry_other,0.99,Andel biobränsle,,"Andel biobränsle, %",0.99,2021.0,custom,67.66,2020.0,65.25395595714286,2.4060440428571326,0.036872002740145904
+2bc6c9c3-6a2e-4b51-b25a-95cb4a49be4b,Elektrifiering,industry,5,industry_other,0.425,Andel elektrifiering,,"Andel el, %",0.425,2021.0,custom,59.48,2020.0,60.407230671428565,-0.9272306714285676,-0.015349663626727517
+e28221c7-ec78-46ee-a85f-21009630f6f4,Fodertillsatser,agriculture,5,animal_digestion,0.885,Fodertillsatser,,"Andel fodertillsatser, %",0.885,2021.0,custom,0.0,2020.0,0.0,0.0,
+ed2b3c8c-f81d-491a-be41-1f653735acae,Förändrad produktion,agriculture,5,,0.442,,Antal nötkreatur inom svenskt jorbruk,Antal nötkreatur,0.442,2021.0,custom,1449316.0,2022.0,1480354.6857142858,-31038.68571428582,-0.020967060133504023
+592a6cf2-433a-42bd-bb5a-731da1a09fae,Ökad resurseffektivitet,agriculture,5,animal_digestion,0.295,,,,0.295,2021.0,custom,,,,,
+9630e410-8271-4412-8121-5a4d5e85455c,Täckning av gödselbrunnar,agriculture,5,storage_of_fertilisers,0.177,,,,0.177,2021.0,custom,,,,,
+48a8e3a4-80b5-4108-9ff2-caf731b273df,Rötning till biogas,agriculture,5,storage_of_fertilisers,0.177,Rötning till biogas,,"Biogas från gödsel, GWh",0.177,2021.0,custom,335.0,2022.0,262.9142857142857,72.08571428571429,0.27417952618995867
+fe668ba6-0c4a-49c0-a088-66c3aa9e6d93,Kvarvarande utsläpp,agriculture,0,,0.0,,,,0.236,2021.0,custom,,,,,
+206f6b8d-c66c-477f-bed1-0204ccfad522,Övergång till elbil,transport,5,mobility,5.418,Antal laddbara bilar,,Antal laddbara bilar,5.418,2021.0,custom,437240.0,2022.0,380051.0,57189.0,0.15047717280049255
+467c2fa7-88b2-4293-a8f1-995abc821c8f,Ökad andel förnybart i diesel,transport,5,mobility,0.4319599718183606,Biodrivmedel i diesel,,"Andel biodrivmedel, volymprocent",0.2,2021.0,custom,33.6,2022.0,34.7,-1.1000000000000014,-0.03170028818443804
+c0520dec-8ba7-4f16-996d-f07f4b66cbe3,Elektrifiering av tunga lastbilar,transport,5,freight,0.805,Elektrifiering godstransporter,,"Transportarbete med el, Mtonkm",0.805,2021.0,custom,413.0,2021.0,500.0,-87.0,-0.17400000000000004
+4727ff43-b1c4-4ed6-9aa5-7b8cebd12888,Biodrivmedel för tunga lastbilar,transport,5,freight,1.495,Biodrivmedel till tunga lastbilar,,"Biodrivmedel, TWh",1.495,2021.0,custom,3.78,2020.0,3.66,0.11999999999999966,0.032786885245901454
+76127196-7fe8-4dfd-ab84-573969b07c0d,Nitrifikationshämmare,agriculture,5,agricultural_land,0.156,Nitrifikationshämmare,,,0.156,2021.0,custom,,,,,
+9b07d959-60f3-419b-956d-16504914bd69,Förändrad och preciserad gödselanvändning,agriculture,5,agricultural_land,0.218,,,,0.218,2021.0,custom,,,,,
+3d29d226-18be-4e0b-b31b-160173c5b88a,Kvarvarande utsläpp,agriculture,0,,0.0,,,,2.119,2021.0,custom,,,,,
+e5e6a0c8-1c61-4e87-9528-440ba51e4b68,Effektivare persontransporter ,transport,5,mobility,0.285,Antal personer per bil,,Antal personer per bil,0.285,2021.0,custom,2.114,2023.0,2.188111111111111,-0.07411111111111124,-0.03386990301122228
+09eabf4b-ad4a-417d-9994-fa538b88184f,Förbättrad fordonsteknik,transport,5,mobility,0.951,Energieffektivitet nya bensin och dieselbilar,,"Effektivitet, km/kWh",0.951,2021.0,custom,1.71,2022.0,1.966,-0.256,-0.1302136317395728
+8879e250-acf0-4418-86e8-0c4afecaa622,Energieffektivare tunga lastbilar,transport,5,freight,1.38,Energieffektivitet tunga lastbilar,,"Energieffektivitet, km/l diesel",1.38,2021.0,custom,2.857,2019.0,3.1069,-0.2498999999999998,-0.0804338729923717
+ca2374a9-b54b-44a9-9695-3344cc257b30,Biodrivmedel för inrikes flyg,transport,5,other_transport,0.116,Andel biobränsle,,"Andel biobränsle, %",0.116,2021.0,custom,1.3,2022.0,2.0,-0.7,-0.35
+6373d1e3-a996-48ac-a840-e6054ef75ca2,Energieffektiva flygplan,transport,5,other_transport,0.054,Energieffektivitet flygplan,,Fordonskilometer per m3 bränsle,0.054,2021.0,custom,240.0,2019.0,276.51428571428573,-36.514285714285734,-0.13205207687538756
+ebb72100-0b8d-4117-b652-a7b2593c179d,Biodrivmedel inrikes sjöfart,transport,5,other_transport,0.358,Andel biodrivmedel,,"Andel biodrivmedel, %",0.358,2021.0,custom,5.1,2020.0,24.75,-19.65,-0.793939393939394
+49c7084e-b791-4f0d-9b31-36b004359467,Elektrifiering av inrikes sjöfart,transport,5,other_transport,0.154,Andel eldrift,,"Andel eldrift, %",0.154,2021.0,custom,0.0,2020.0,3.0,-3.0,-1.0
+aa1fd846-9afa-4bb1-bbd9-aecabcb7196c,LNG för sjötransporter,transport,5,other_transport,0.051,Flytande naturgas,,Ton LNG,0.051,2021.0,custom,25035.0,2020.0,22000.0,3035.0,0.13795454545454544
+6b82e094-8caa-41a5-9f48-2586242a0784,Energieffektiva fartyg,transport,5,other_transport,0.077,Energieffektiv sjöfart,,"Förändring effektivitet, %",0.077,2021.0,custom,-0.88,2020.0,3.19,-4.07,-1.2758620689655173
+2dd04c9a-fe77-4f84-93e6-5e8566f79ee5,Ökad andel gång och cykeltrafik,transport,5,mobility,0.599,Andel persontransport som är gång/cykeltrafik,,"Andel gång och cykel, %",0.599,2021.0,custom,3.34,2022.0,3.324027676,0.015972323999999816,0.004805111616645874
+40740dea-2ece-447a-995a-67ff093828c7,Överflyttning till järnväg,transport,5,mobility,0.599,Andel persontransporter med tåg,,"Andel järnvägstransporter, %",0.599,2021.0,custom,9.04,2022.0,9.968,-0.9280000000000008,-0.09309791332263251
+1e7a3484-9175-490f-b739-a9c17ff5259d,Ökad andel resfria möten och tjänster,transport,5,mobility,0.599,Andel resfria möten,,"Andel resfria möten, %",0.599,2021.0,custom,,,,,
+41bdd6f8-51cd-46c0-9b7f-6ed673897afd,Överflyttning av fraktat gods till järnväg,transport,5,freight,0.138,Gods på järnväg,,"Transportarbete, Mtonkm",0.138,2021.0,custom,21305.0,2021.0,21815.6,-510.59999999999854,-0.023405269623572034
+14ae8d72-a905-44e1-b8e3-f056b6900ba5,Överflyttning av fraktat gods till sjöfart,transport,5,freight,0.138,Gods med sjötransport,,"Transportarbete inrikes sjöfart, Mtonkm",0.138,2021.0,custom,7910.0,2021.0,8099.6,-189.60000000000036,-0.023408563385846293
+12a60298-5958-4463-96ab-6b9d796375e5,Ökad fyllnadsgrad för tunga godstransporter,transport,5,freight,0.644,Fyllnadsgrad tung lastbil,,"Genomsnittlig last, ton",0.644,2021.0,custom,13.62,2019.0,13.47,0.14999999999999858,0.011135857461024301
+e9235b89-f71e-46a5-a549-e0b5672b6422,Kvarvarande utsläpp,agriculture,0,,0.0,,,,1.327,2021.0,custom,,,,,
+a1cd0940-a539-4820-8e0a-88b62fc75f7b,Optimering av betong,industry,5,cement_and_concrete,0.136,Andel nybyggda flerbostadshus med prefabricerad betong,,"Andel prefabricerad betong, %",0.136,2021.0,custom,40.0,2020.0,29.0,11.0,0.3793103448275863
+1c910ad7-5124-4d9f-9758-a9a0a19e7f37,Biobränsle för cement och mineralindustri,industry,5,cement_and_concrete,0.204,Andel biobränsle,,"Andel biobränsle, %",0.204,2021.0,custom,10.02,2021.0,17.351771428571432,-7.331771428571432,-0.4225373448902707
+06b6adcd-eb6b-4f75-99ee-0466582cb68f,CCS i avfallsförbränning,energy,5,electricity_and_district_heating,0.814,Andel CCS i avfallsförbränning,,"Andel CCS, procent",0.814,2021.0,custom,0.0,2022.0,0.0,0.0,
+c185ddbb-550c-4d9b-b243-fdf045f10cc0,Spillvärme i fjärrvärmenät,energy,5,electricity_and_district_heating,0.518,Spillvärme till fjärrvärme,,"Spillvärme, GWh",0.518,2021.0,custom,4657.0,2022.0,6750.342857142858,-2093.3428571428576,-0.3101091161507141
+f4c01ab7-ee6a-4a03-8f85-1597c57a0ee4,Minskad andel fossilt avfall,energy,5,electricity_and_district_heating,0.976,Förnybar andel av avfall till energiåtervinning,,"Andel förnybart, procent",0.976,2021.0,custom,60.12,2021.0,66.79714285714286,-6.6771428571428615,-0.09996150391376879
+e24f65a4-273f-40f4-9191-fd892dc0a28d,Biobränslen för värme och elproduktion,energy,5,electricity_and_district_heating,0.118,Andel biobränsle för värme- och elproduktion,,"Andel förnybara bränslen, procent",0.118,2021.0,custom,96.6,2022.0,80.71942857142857,15.880571428571429,0.19673790696521998
+c708f353-fd8b-4748-9437-6daf0ba135b4,Torv som ersatts med biobränsle,energy,5,electricity_and_district_heating,0.164,Andel torv ersatts med biobränsle,,"Torv som ersatts, procent",0.164,2021.0,custom,92.51,2022.0,24.0,68.51,2.8545833333333337
+60d2d741-6db2-4a53-b589-c193b8bb456e,CCS fasta biobränslen,energy,5,electricity_and_district_heating,0.214,Mängd insamlad CO2 från fasta biobränslen,,"Insamlad mängd koldioxid, kton",0.214,2021.0,custom,0.0,2019.0,0.0,0.0,
+5f5e13d7-25cf-4707-829d-6ae1970b4eb8,Biobränslen i alla byggnader,energy,5,local_heating,0.087,Konvertering till biobränsle,,Antal konverterade oljepannor,0.087,2021.0,custom,9177.0,2019.0,3548.0,5629.0,1.5865276211950397
+95c0c013-7789-44eb-bc48-9daf778b13f4,Värmepumpar i lokaler,energy,5,local_heating,0.177,Konvertering till värmepump,,Antal konverterade oljepannor,0.177,2021.0,custom,18354.0,2019.0,7096.0,11258.0,1.5865276211950397
+28105d6c-e7e0-4f15-a6fc-a2f8893237ac,Byte till fjärrvärme i byggnader,energy,5,local_heating,0.177,Konvertering till fjärrvärme,,Antal konverterade oljepannor,0.177,2021.0,custom,18354.0,2019.0,7096.0,11258.0,1.5865276211950397
+2045535a-b005-4be9-bdf2-cf0b49f05732,Ersättning av lösningsmedel,other,5,solvents,0.139,,,,0.139,2021.0,custom,,,,,
+9b9996af-10c9-474b-a4e6-29a7cb37eac3,Förbättrad energieffektivitet arbetsmaskiner,other,5,machinery,0.669,,,,0.669,2021.0,custom,,,,,
+86240ee5-ae83-458e-89af-91cc95163b19,Elektrifiering av arbetsmaskiner,other,5,machinery,1.004,,,,1.004,2021.0,custom,,,,,
+c90b0061-9323-4080-a788-6866776cdd53,Biodrivmedel för arbetsmaskiner,other,5,machinery,1.674,Biodrivmedel i arbetsmaskiner,,"Biodrivmedel, TWh",1.674,2021.0,custom,3.49,2019.0,2.592857142857143,0.8971428571428572,0.34600550964187327
+e2df05b7-ba7f-4d02-92f1-bc5246b3be24,Minskade läckage,other,5,waste,0.711,,,,0.711,2021.0,custom,,,,,
+38b15848-5fe5-4d0e-8f57-845297a37cce,Effektivare behandling,other,5,waste,0.237,,,,0.237,2021.0,custom,,,,,
+d2d78ac8-2b95-403b-a781-d30f68860b0e,Effektivare växtförädling och odlingssystem,agriculture,5,agricultural_land,0.467,Effektivare växtförädling,,,0.467,2021.0,custom,,,,,
+18b3b22b-3988-4562-8376-0e8675c4ef2c,Minskat lustgasutsläpp genom återvätning,agriculture,5,agricultural_land,0.156,,,,0.156,2021.0,custom,,,,,
+715e6114-3a60-4214-ae95-f5ebbcb88446,CCS: koldioxidfångare,industry,5,refineries,1.2,CCS raffinaderi,,"Infångad och lagrad koldioxid, ton",1.2,2021.0,custom,0.0,2021.0,0.0,0.0,
+e576a22d-538b-4d71-8d22-29935fcca09b,Kvarvarande utsläpp,industry,0,,0.0,Kvarvarande utsläpp,,,0.335,2021.0,custom,,,,,
+b61ae7e0-6b0b-4ecd-88eb-e853f292f714,Minskad användning av lösningsmedel,other,5,solvents,0.326,Minskad användning av lösningsmedel,,"Utsläppsminskning, kton",0.326,2021.0,custom,3.0,2019.0,36.51428571428571,-33.51428571428571,-0.9178403755868545
+63ec76cd-a0e6-4438-bfde-2fdbf87e819f,Ersättning av fluorerade gaser,other,5,solvents,0.79,Ersättning av fluorerade gaser,,,0.79,2021.0,custom,,,,,
+9d4f2ecc-993c-46e7-9671-2f4dfcc936ed,Destruering av fluorerade gaser,other,5,solvents,0.088,,,,0.088,2021.0,custom,,,,,
+c69104a5-5e6a-4f24-8cd6-90dd42a3d5b5,Övergång från flyg till tåg,transport,5,other_transport,0.023,Andel persontransporter med tåg,,"Andel järnvägstransporter, %",0.023,2021.0,custom,10.7,2019.0,10.4,0.29999999999999893,0.028846153846153744
+8f3e69ba-6ffd-46ca-a493-b7b627fe0481,Från betong/stål till trästomme i flerbostadshus,industry,5,cement_and_concrete,0.326,Antal nya lägenheter i trähus,,Antal nybyggda lägenheter som är trähus,0.326,2021.0,custom,4110.0,2020.0,28052.0,-23942.0,-0.8534863824326251
+1d415104-3947-40e6-bd96-c3d0def3466e,Ökad andel förnybart i bensin,transport,5,mobility,0.086,Andel biodrivmedel,,"Andel biodrivmedel, %",0.086,2021.0,custom,12.0,2022.0,12.8,-0.8000000000000007,-0.0625
+eb059e10-02b6-4f18-a7ad-bab08d0e6351,Biogas i kommersiella lokaler,energy,5,local_heating,0.31,Antal konverterade naturgaspannor,,Antal konverterade naturgaspannor,0.31,2021.0,custom,115.0,2019.0,231.42857142857144,-116.42857142857144,-0.5030864197530864
+cc3d3604-ff91-400b-937d-20aec0fd28bc,Ökad andel kollektivtrafik,transport,5,,0.799,Andel resor genom kollektivtrafik,,"Andel resor med kollektivtrafik, %",0.799,2021.0,custom,10.34,2022.0,12.732,-2.3919999999999995,-0.18787307571473455
+d069b823-0002-4102-9b15-5d7e35d0b1f8,Fossilfri elproduktion,energy,5,electricity_and_district_heating,1.195,Fossilfri elproduktion,Fossilfri elproduktion,"Andel fossilfri elproduktion, procent",1.195,2021.0,custom,98.8,2022.0,96.7,2.0999999999999943,0.02171664943123064

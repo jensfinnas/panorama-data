@@ -22,7 +22,7 @@ ed2b3c8c-f81d-491a-be41-1f653735acae,Förändrad produktion,agriculture,5,animal
 9630e410-8271-4412-8121-5a4d5e85455c,Täckning av gödselbrunnar,agriculture,5,storage_of_fertilisers,0.18,,,,0.18,2022.0,custom,,,,,
 48a8e3a4-80b5-4108-9ff2-caf731b273df,Rötning till biogas,agriculture,5,storage_of_fertilisers,0.18,Rötning till biogas,,"Biogas från gödsel, GWh",0.18,2022.0,custom,335.0,2022.0,262.9142857142857,72.08571428571429,0.27417952618995867
 fe668ba6-0c4a-49c0-a088-66c3aa9e6d93,Kvarvarande utsläpp,agriculture,0,,0.0,,,,0.24,2022.0,custom,,,,,
-206f6b8d-c66c-477f-bed1-0204ccfad522,Övergång till elbil,transport,5,mobility,4.8507,Antal laddbara bilar,,Antal laddbara bilar,4.8507,2022.0,custom,564020.0,2023.0,543251.0,20769.0,0.03823094665265225
+206f6b8d-c66c-477f-bed1-0204ccfad522,Övergång till elbil,transport,5,mobility,4.8507,Antal laddbara bilar,,Antal laddbara bilar,4.8507,2022.0,custom,437240.0,2022.0,380051.0,57189.0,0.15047717280049255
 467c2fa7-88b2-4293-a8f1-995abc821c8f,Ökad andel förnybart i diesel,transport,5,mobility,0.17871,Biodrivmedel i diesel,,"Andel biodrivmedel, volymprocent",0.17871,2022.0,custom,33.6,2022.0,34.7,-1.1000000000000014,-0.03170028818443804
 c0520dec-8ba7-4f16-996d-f07f4b66cbe3,Elektrifiering av tunga lastbilar,transport,5,freight,0.71575,Elektrifiering godstransporter,,"Transportarbete med el, Mtonkm",0.71575,2022.0,custom,413.0,2021.0,500.0,-87.0,-0.17400000000000004
 4727ff43-b1c4-4ed6-9aa5-7b8cebd12888,Biodrivmedel för tunga lastbilar,transport,5,freight,1.32925,Biodrivmedel till tunga lastbilar,,"Biodrivmedel, TWh",1.32925,2022.0,custom,3.78,2020.0,3.66,0.11999999999999966,0.032786885245901454
@@ -64,7 +64,7 @@ e2df05b7-ba7f-4d02-92f1-bc5246b3be24,Minskade läckage,other,5,waste,0.705,,,,0.
 38b15848-5fe5-4d0e-8f57-845297a37cce,Effektivare behandling,other,5,waste,0.235,,,,0.235,2022.0,custom,,,,,
 d2d78ac8-2b95-403b-a781-d30f68860b0e,Effektivare växtförädling och odlingssystem,agriculture,5,agricultural_land,0.39,Effektivare växtförädling,,,0.39,2022.0,custom,,,,,
 18b3b22b-3988-4562-8376-0e8675c4ef2c,Minskat lustgasutsläpp genom återvätning,agriculture,5,agricultural_land,0.13,,,,0.13,2022.0,custom,,,,,
-715e6114-3a60-4214-ae95-f5ebbcb88446,CCS: koldioxidfångare,industry,5,refineries,0.73717,CCS raffinaderi,,"Infångad och lagrad koldioxid, ton",0.73717,2022.0,custom,0.0,2022.0,0.0,0.0,
+715e6114-3a60-4214-ae95-f5ebbcb88446,CCS: koldioxidfångare,industry,5,refineries,0.73717,CCS raffinaderi,,"Infångad och lagrad koldioxid, ton",0.73717,2022.0,custom,0.0,2021.0,0.0,0.0,
 e576a22d-538b-4d71-8d22-29935fcca09b,Kvarvarande utsläpp,industry,0,,0.0,Kvarvarande utsläpp,,,0.3268,2022.0,custom,,,,,
 b61ae7e0-6b0b-4ecd-88eb-e853f292f714,Minskad användning av lösningsmedel,other,5,solvents,0.3094,Minskad användning av lösningsmedel,,"Utsläppsminskning, kton",0.3094,2022.0,custom,3.0,2019.0,36.51428571428571,-33.51428571428571,-0.9178403755868545
 63ec76cd-a0e6-4438-bfde-2fdbf87e819f,Ersättning av fluorerade gaser,other,5,solvents,0.7631,Ersättning av fluorerade gaser,,,0.7631,2022.0,custom,,,,,
