@@ -56,8 +56,12 @@ def compare_csv_files(file1_path: str, file2_path: str) -> Dict[str, List[Dict]]
 def convert_values_to_float(input_dict):
     output_dict = {}
     for key, value in input_dict.items():
-        try:
-            output_dict[key] = float(value)
-        except ValueError:
-            output_dict[key] = value
+        if value == '':
+            output_dict[key] = None
+        else:
+            try:
+                output_dict[key] = float(value)
+            except ValueError:
+                output_dict[key] = value
     return output_dict
+

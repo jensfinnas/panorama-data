@@ -45,17 +45,22 @@ def generate_summary(now, then):
     }
 
     context["Unit"] = parse_unit(now["transitionUnit"])
+    context["Now"]["vsTarget"] = more_or_less(now["targetDiffPct"])
+
     try:
         context["ChangePct"] = now["outcomeLatestValue"] / then["outcomeLatestValue"] - 1
         context["Dev"] = more_or_less(context["ChangePct"])
+        context["Then"]["vsTarget"] = more_or_less(then["targetDiffPct"])
 
     except ZeroDivisionError:
         context["ChangePct"] = None
         context["Dev"] = more_or_less(now["outcomeLatestValue"])
-
-    context["Then"]["vsTarget"] = more_or_less(then["targetDiffPct"])
-    context["Now"]["vsTarget"] = more_or_less(now["targetDiffPct"])
-
+    
+    except TypeError:
+        # outcomeLatestValue är None
+        context["ChangePct"] = None
+        context["Dev"] = None
+    
     template = """
 - const StableThreshold = 0.01
 - const överEllerUnder = diff => diff > 0 ? "över" : "under"
@@ -87,47 +92,48 @@ p Vi ligger alltså
     |.  
 
 
-hr
+if Then.vsTarget        
+    hr
 
-h3 Vartåt pekar utvecklingen?
+    h3 Vartåt pekar utvecklingen?
 
-p 
-    | År #{ Math.round(Then.outcomeLatestYear) } låg vi 
+    p 
+        | År #{ Math.round(Then.outcomeLatestYear) } låg vi 
 
-    if Then.vsTarget == "same"
-        | i linje med målbanan,  
+        if Then.vsTarget == "same"
+            | i linje med målbanan,  
 
-    else if Then.vsTarget == "less"
-        | #{ percent(Math.abs(Then.targetDiffPct)) } procent under målbanan, 
+        else if Then.vsTarget == "less"
+            | #{ percent(Math.abs(Then.targetDiffPct)) } procent under målbanan, 
 
-    else if Then.vsTarget == "more"
-        | #{ percent(Then.targetDiffPct) } procent över målbanan, 
+        else if Then.vsTarget == "more"
+            | #{ percent(Then.targetDiffPct) } procent över målbanan, 
 
-    else
-        | ERROR: #{Then.vsTarget}
-            
-    
-    | i dag ligger vi  
-    if Now.vsTarget == "same"
-        | i linje.  
+        else
+            | ERROR: #{Then.vsTarget}
+                
+        
+        | i dag ligger vi  
+        if Now.vsTarget == "same"
+            | i linje.  
 
-    else if Now.vsTarget == "less"
-        | #{ percent(Math.abs(Now.targetDiffPct)) } procent under. 
+        else if Now.vsTarget == "less"
+            | #{ percent(Math.abs(Now.targetDiffPct)) } procent under. 
 
-    else if Now.vsTarget == "more"
-        | #{ percent(Now.targetDiffPct) } procent över. 
+        else if Now.vsTarget == "more"
+            | #{ percent(Now.targetDiffPct) } procent över. 
 
-    
-    if Math.abs(Now.targetDiffPct - Then.targetDiffPct) > 0.01
-        | Utvecklingen går alltså åt 
-        strong
-            if Now.targetDiffPct > Then.targetDiffPct
-                | rätt håll 😊
-            
-            else
-                | fel håll 😢
+        
+        if Math.abs(Now.targetDiffPct - Then.targetDiffPct) > 0.01
+            | Utvecklingen går alltså åt 
+            strong
+                if Now.targetDiffPct > Then.targetDiffPct
+                    | rätt håll 😊
+                
+                else
+                    | fel håll 😢
 
-        |. 
+            |. 
 
 hr
 
