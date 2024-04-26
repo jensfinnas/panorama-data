@@ -13,9 +13,15 @@ outfile_json = os.path.join(OUTDIR, f"{today}.json")
 outfile_csv = os.path.join(OUTDIR, f"{today}.csv")
 
 # Scrape
-url = "https://api.climateview.net/boards/Boards/ec2d0cdf-e70e-43fb-85cb-ed6b31ee1e09/published/v3"
-print(f"/GET {url}")
-r = requests.get(url, verify=False)
+#url = "https://api.climateview.net/boards/Boards/ec2d0cdf-e70e-43fb-85cb-ed6b31ee1e09/published/v3"
+url_1 = "https://api.climateview.net/published-boards/v1/ec2d0cdf-e70e-43fb-85cb-ed6b31ee1e09"
+print(f"/GET {url_1}")
+r = requests.get(url_1, verify=False)
+url_2 = r.json()["blobUrl"]
+
+print(f"/GET {url_2}")
+r = requests.get(url_2, verify=False)
+
 
 
 # Store a copy of the raw file
